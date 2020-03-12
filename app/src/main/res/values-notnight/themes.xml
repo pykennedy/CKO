@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MainTheme" parent="Theme.MaterialComponents.Light">
+        <item name="colorPrimary">@color/dGreyLight</item>
+        <item name="android:textColorPrimary">@color/black87</item>
+        <item name="android:textColorHint">@color/black60</item>
+        <item name="colorOnPrimary">@color/black87</item>
+        <item name="colorPrimaryVariant">@color/dGrey</item>
+        <item name="colorPrimaryDark">@color/dGreyDark</item>
+
+        <item name="colorSecondary">@color/dPurple</item>
+        <item name="colorOnSecondary">@color/white87</item>
+        <item name="colorSecondaryVariant">@color/dPurpleLight</item>
+
+        <item name="colorAccent">@color/dTeal</item>
+
+        <item name="android:colorBackground">@color/white</item>
+        <item name="colorOnBackground">@color/black87</item>
+
+        <item name="colorSurface">@color/dGreyLight</item>
+        <item name="colorOnSurface">@color/black87</item>
+
+        <item name="colorError">@color/dRed</item>
+        <item name="colorOnError">@color/white87</item>
+    </style>
+
+</resources>
