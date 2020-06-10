@@ -5,7 +5,7 @@
     android:layout_height="wrap_content">
 
     <com.google.android.material.card.MaterialCardView
-        android:id="@+id/materialCardView"
+        android:id="@+id/mcv_frame"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="4dp"
@@ -20,20 +20,16 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <com.google.android.material.card.MaterialCardView
-                android:id="@+id/cv_userProfileHolder"
-                style="@style/FeedItemProfileCardHolderStyle"
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/iv_userProfileImage"
+                android:layout_height="50dp"
+                android:layout_width="50dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
-
-                <androidx.appcompat.widget.AppCompatImageView
-                    android:id="@+id/iv_userprofile"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@color/black"
-                    android:scaleType="centerCrop" />
-
-            </com.google.android.material.card.MaterialCardView>
+                app:layout_constraintTop_toTopOf="parent"
+                android:background="@color/black"
+                app:shapeAppearanceOverlay="@style/CircleOverlay" />
 
             <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/iv_image"
@@ -43,15 +39,17 @@
                 android:layout_marginTop="4dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/cv_userProfileHolder" />
+                app:layout_constraintTop_toBottomOf="@id/iv_userProfileImage" />
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/tv_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Hello World!"
+                android:layout_margin="4dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/iv_image" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>

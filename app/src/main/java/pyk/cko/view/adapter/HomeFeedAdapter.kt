@@ -15,32 +15,49 @@ class HomeFeedAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         return when (viewType) {
-            StaticValues.TYPE_TEXT  -> {
+            StaticValues.TYPE_TEXT       -> {
                 TextViewHolder(
                     LayoutInflater.from(parent.context)
                         .inflate(R.layout.feeditem_text, parent, false)
                 )
             }
-            StaticValues.TYPE_PHOTO -> {
+            StaticValues.TYPE_TEXT_CLUB  -> {
+                TextViewHolder(
+                    LayoutInflater.from(parent.context)
+                        .inflate(R.layout.feeditem_text_club, parent, false)
+                )
+            }
+            StaticValues.TYPE_PHOTO      -> {
                 PhotoViewHolder(
                     LayoutInflater.from(parent.context)
                         .inflate(R.layout.feeditem_photo, parent, false)
                 )
             }
-            StaticValues.TYPE_VIDEO -> {
+            StaticValues.TYPE_PHOTO_CLUB -> {
+                PhotoViewHolder(
+                    LayoutInflater.from(parent.context)
+                        .inflate(R.layout.feeditem_photo_club, parent, false)
+                )
+            }
+            StaticValues.TYPE_VIDEO      -> {
                 VideoViewHolder(
                     LayoutInflater.from(parent.context)
                         .inflate(R.layout.feeditem_video, parent, false)
                 )
             }
-            else                    -> {
+            StaticValues.TYPE_VIDEO_CLUB -> {
+                VideoViewHolder(
+                    LayoutInflater.from(parent.context)
+                        .inflate(R.layout.feeditem_video_club, parent, false)
+                )
+            }
+            else                         -> {
                 TextViewHolder(
                     LayoutInflater.from(parent.context)
                         .inflate(R.layout.feeditem_text, parent, false)
                 )
             }
         }
-
     }
 
     override fun getItemCount(): Int {
@@ -59,11 +76,10 @@ class HomeFeedAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
                 StaticValues.items[position]
             )
         }
-
     }
 
     override fun getItemViewType(position: Int): Int {
-        return StaticValues.items[position].type
+        return StaticValues.items[position].type + StaticValues.items[position].groupConvert
     }
 
     class TextViewHolder internal constructor(itemView: View) : RecyclerView.ViewHolder(itemView) {
