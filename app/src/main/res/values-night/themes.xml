@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="MainTheme" parent="Theme.MaterialComponents">
+    <style name="MainTheme" parent="Theme.MaterialComponents.DayNight">
         <item name="colorPrimary">@color/nGrey</item>
         <item name="android:textColorPrimary">@color/white87</item>
         <item name="android:textColorHint">@color/white60</item>
@@ -19,18 +19,25 @@
         <item name="colorOnBackground">@color/white87</item>
 
         <item name="colorSurface">@color/nGrey</item>
-        <item name="colorOnSurface">@color/white87</item>
+        <item name="colorOnSurface">@color/dGrey</item>
 
         <item name="colorError">@color/nRed</item>
         <item name="colorOnError">@color/black87</item>
 
         <item name="elevationOverlayColor">@color/white</item>
 
+        <item name="android:listDivider">@color/white12</item>
+
         <item name="actionBarTheme">@style/ActionBarStyle</item>
+        <item name="materialCardViewStyle">@style/MCVStyle</item>
     </style>
 
-    <style name="ActionBarStyle" parent="Theme.MaterialComponents">
+    <style name="ActionBarStyle" parent="MainTheme">
         <item name="colorSurface">@color/nGreyLight</item>
+    </style>
+
+    <style name="MCVStyle" parent="Widget.MaterialComponents.CardView">
+        <item name="strokeColor">@color/white38</item>
     </style>
 
 </resources>

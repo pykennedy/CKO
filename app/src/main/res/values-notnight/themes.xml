@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="MainTheme" parent="Theme.MaterialComponents.Light">
+    <style name="MainTheme" parent="Theme.MaterialComponents.DayNight">
         <item name="colorPrimary">@color/dGreyLight</item>
         <item name="android:textColorPrimary">@color/black87</item>
         <item name="android:textColorHint">@color/black60</item>
@@ -23,6 +23,14 @@
 
         <item name="colorError">@color/dRed</item>
         <item name="colorOnError">@color/white87</item>
+
+        <item name="android:listDivider">@color/black12</item>
+
+        <item name="materialCardViewStyle">@style/MCVStyle</item>
     </style>
 
+    <style name="MCVStyle" parent="Widget.MaterialComponents.CardView">
+        <item name="strokeColor">@color/black38</item>
+        <item name="elevation">10dp</item>
+    </style>
 </resources>
