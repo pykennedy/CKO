@@ -24,23 +24,83 @@
                 android:id="@+id/iv_userProfileImage"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:layout_marginStart="4dp"
-                android:layout_marginTop="4dp"
+                android:layout_marginTop="@dimen/feedItem_marginTop_parent"
+                android:layout_marginStart="@dimen/feedItem_marginStart_parent"
                 android:background="@color/black"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:shapeAppearanceOverlay="@style/CircleOverlay" />
 
             <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/tv_text"
-                android:layout_width="match_parent"
+                android:id="@+id/tv_username"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_margin="4dp"
+                android:layout_marginStart="@dimen/feedItem_marginBig_internal"
+                android:layout_marginBottom="@dimen/feedItem_margin_internal"
+                android:layout_marginEnd="@dimen/feedItem_marginEnd_parent"
+                android:text="Johny Appleseed"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/tv_time"
+                app:layout_constraintStart_toEndOf="@id/iv_userProfileImage"
+                app:layout_constraintTop_toTopOf="@id/iv_userProfileImage" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/feedItem_marginBig_internal"
+                android:layout_marginEnd="@dimen/feedItem_marginEnd_parent"
+                android:text="8 hrs"
+                app:layout_constraintBottom_toBottomOf="@id/iv_userProfileImage"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/iv_userProfileImage"
+                app:layout_constraintTop_toBottomOf="@id/tv_username" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/feedItem_margin_internal"
+                android:layout_marginStart="@dimen/feedItem_marginStart_parent"
+                android:layout_marginEnd="@dimen/feedItem_marginEnd_parent"
+                android:layout_marginBottom="@dimen/feedItem_marginBottom_parent"
                 android:text="Hello World!"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/iv_userProfileImage" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/iv_commentIcon"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            app:srcCompat="@drawable/ic_comment"
+            android:layout_marginTop="@dimen/feedItem_marginBig_internal"
+            android:layout_marginBottom="@dimen/feedItem_marginBottom_parent"
+            app:layout_constraintStart_toStartOf="@id/iv_userProfileImage"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_text"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_commentCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8"
+                android:layout_marginStart="@dimen/feedItem_margin_internal"
+                app:layout_constraintStart_toEndOf="@+id/iv_commentIcon"
+                app:layout_constraintTop_toTopOf="@id/iv_commentIcon"
+                app:layout_constraintBottom_toBottomOf="@id/iv_commentIcon"/>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/iv_emojiIcon"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                app:srcCompat="@drawable/ic_emoji"
+                android:layout_marginTop="@dimen/feedItem_marginBig_internal"
+                android:layout_marginBottom="@dimen/feedItem_marginBottom_parent"
+                android:layout_marginEnd="@dimen/feedItem_marginEnd_parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_text"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

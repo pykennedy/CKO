@@ -28,6 +28,7 @@
 
         <item name="android:listDivider">@color/white12</item>
 
+
         <item name="actionBarTheme">@style/ActionBarStyle</item>
         <item name="materialCardViewStyle">@style/MCVStyle</item>
     </style>
