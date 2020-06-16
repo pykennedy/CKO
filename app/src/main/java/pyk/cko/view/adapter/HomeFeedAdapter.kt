@@ -86,7 +86,7 @@ class HomeFeedAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
         private val text: TextView = itemView.findViewById(R.id.tv_text)
         fun update(item: FeedItem) {
             if (item is FeedText) {
-                text.text = (item as FeedText).text
+                text.text = item.text
             }
         }
     }
@@ -95,7 +95,10 @@ class HomeFeedAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
         private val text: TextView = itemView.findViewById(R.id.tv_text)
         fun update(item: FeedItem) {
             if (item is FeedText) {
-                text.text = (item as FeedText).text
+                text.text = item.text
+            }
+            if(text.text.isEmpty()) {
+                text.visibility = View.GONE
             }
         }
     }
@@ -104,7 +107,10 @@ class HomeFeedAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
         private val text: TextView = itemView.findViewById(R.id.tv_text)
         fun update(item: FeedItem) {
             if (item is FeedText) {
-                text.text = (item as FeedText).text
+                text.text = item.text
+            }
+            if(text.text.isEmpty()) {
+                text.visibility = View.GONE
             }
         }
     }

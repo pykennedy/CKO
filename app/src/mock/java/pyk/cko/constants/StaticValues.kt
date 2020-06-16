@@ -50,7 +50,7 @@ class StaticValues {
                     "I would like to discuss that which is known as having a good time at the beach. I postulate that perhaps other than fun what may have been acquired as well is cultural enrichment and the property of having sand in ones shoe. Such a feeling can only be described in metaphysical properties including but not exclusive to feeling like Anakin Skywalker when  he discusses his distaste for sand."
                 )
             )
-            list.add(FeedText(3, 1, 0, "777"))
+            list.add(FeedText(3, 1, 0, null))
             list.add(
                 FeedText(
                     2, 1, 0,
@@ -71,7 +71,7 @@ class StaticValues {
                     "I would like to discuss that which is known as having a good time at the beach. I postulate that perhaps other than fun what may have been acquired as well is cultural enrichment and the property of having sand in ones shoe. Such a feeling can only be described in metaphysical properties including but not exclusive to feeling like Anakin Skywalker when  he discusses his distaste for sand."
                 )
             )
-            list.add(FeedText(3, 2, 0, "777"))
+            list.add(FeedText(3, 2, 0, ""))
             list.add(
                 FeedText(
                     2, 2, 0,

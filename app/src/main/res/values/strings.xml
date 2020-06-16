@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">CKO</string>
+    <string name="default_group_name">Mr. Appleman\'s Biology Study Group</string>
+    <string name="default_username">Johny Penelope Appleseed</string>
+    <string name="default_time">8 hours ago</string>
+    <string name="default_commentcount">8</string>
 </resources>

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <!-- Global Theme -->
+
     <style name="MainTheme" parent="Theme.MaterialComponents.DayNight">
         <item name="colorPrimary">@color/nGrey</item>
         <item name="android:textColorPrimary">@color/white87</item>
@@ -26,19 +28,72 @@
 
         <item name="elevationOverlayColor">@color/white</item>
 
+        <!-- Specific Colors -->
         <item name="android:listDivider">@color/white12</item>
+        <item name="tint">@color/white60</item>
 
-
+        <!-- Reference to Widget Themes -->
         <item name="actionBarTheme">@style/ActionBarStyle</item>
-        <item name="materialCardViewStyle">@style/MCVStyle</item>
     </style>
+
+    <!-- Widget Specific Themes -->
 
     <style name="ActionBarStyle" parent="MainTheme">
         <item name="colorSurface">@color/nGreyLight</item>
     </style>
 
-    <style name="MCVStyle" parent="Widget.MaterialComponents.CardView">
-        <item name="strokeColor">@color/white38</item>
+    <!-- Text Coloring -->
+
+    <style name="Theme.Text.Headline1" parent="Text.Headline1">
+        <item name="android:textColor">@color/white87</item>
+    </style>
+
+    <style name="Theme.Text.Headline2" parent="Text.Headline2">
+        <item name="android:textColor">@color/white87</item>
+    </style>
+
+    <style name="Theme.Text.Headline3" parent="Text.Headline3">
+        <item name="android:textColor">@color/white87</item>
+    </style>
+
+    <style name="Theme.Text.Headline4" parent="Text.Headline4">
+        <item name="android:textColor">@color/white87</item>
+    </style>
+
+    <style name="Theme.Text.Headline5" parent="Text.Headline5">
+        <item name="android:textColor">@color/white87</item>
+    </style>
+
+    <style name="Theme.Text.Headline6" parent="Text.Headline6">
+        <item name="android:textColor">@color/white87</item>
+    </style>
+
+    <style name="Theme.Text.Subtitle1" parent="Text.Subtitle1">
+        <item name="android:textColor">@color/white87</item>
+    </style>
+
+    <style name="Theme.Text.Subtitle2" parent="Text.Subtitle2">
+        <item name="android:textColor">@color/white60</item>
+    </style>
+
+    <style name="Theme.Text.Body1" parent="Text.Body1">
+        <item name="android:textColor">@color/white87</item>
+    </style>
+
+    <style name="Theme.Text.Body2" parent="Text.Body2">
+        <item name="android:textColor">@color/white60</item>
+    </style>
+
+    <style name="Theme.Text.Caption" parent="Text.Caption">
+        <item name="android:textColor">@color/white60</item>
+    </style>
+
+    <style name="Theme.Text.Button" parent="Text.Button">
+        <item name="android:textColor">@color/white87</item>
+    </style>
+
+    <style name="Theme.Text.Overline" parent="Text.Overline">
+        <item name="android:textColor">@color/white60</item>
     </style>
 
 </resources>
