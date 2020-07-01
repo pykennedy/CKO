@@ -5,6 +5,11 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ListAdapter
 import android.widget.TextView
+import androidx.core.os.bundleOf
+import androidx.navigation.NavAction
+import androidx.navigation.Navigation
+import androidx.navigation.Navigation.findNavController
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import pyk.cko.R
 import pyk.cko.constants.StaticValues
@@ -88,6 +93,8 @@ class HomeFeedAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
             if (item is FeedText) {
                 text.text = item.text
             }
+            val bundle = bundleOf("item" to item)
+            itemView.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.action_homeFragment_to_itemDetailsFragment, bundle))
         }
     }
 
@@ -100,6 +107,8 @@ class HomeFeedAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
             if(text.text.isEmpty()) {
                 text.visibility = View.GONE
             }
+            val bundle = bundleOf("item" to item)
+            itemView.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.action_homeFragment_to_itemDetailsFragment, bundle))
         }
     }
 
@@ -112,6 +121,8 @@ class HomeFeedAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
             if(text.text.isEmpty()) {
                 text.visibility = View.GONE
             }
+            val bundle = bundleOf("item" to item)
+            itemView.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.action_homeFragment_to_itemDetailsFragment, bundle))
         }
     }
 }
