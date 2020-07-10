@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 import pyk.cko.R
 import pyk.cko.model.FeedText
 import pyk.cko.view.adapter.HomeFeedAdapter
+import pyk.cko.view.adapter.ItemDetailsAdapter
 
 class ItemDetailsFragment: Fragment() {
     private lateinit var rootView: View
@@ -18,7 +19,7 @@ class ItemDetailsFragment: Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
-        rootView = inflater.inflate(R.layout.fragment_itemdetails, container, false)
+        rootView = inflater.inflate(R.layout.fragment_itemdetails_motion, container, false)
         return rootView
     }
 
@@ -26,7 +27,11 @@ class ItemDetailsFragment: Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val bundle = arguments
         val item = bundle?.get("item") as FeedText
-        val textView: TextView = rootView.findViewById(R.id.tv_stuff)
+        val textView: TextView = rootView.findViewById(R.id.tv_text)
         textView.text = item.text
+
+        recyclerView = rootView.findViewById(R.id.rv_comments)
+        recyclerView.layoutManager = LinearLayoutManager(activity)
+        recyclerView.adapter = ItemDetailsAdapter()
     }
 }

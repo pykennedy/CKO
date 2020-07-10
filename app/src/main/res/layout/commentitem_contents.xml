@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_userProfileImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/CircleOverlay"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="@dimen/feedItem_marginStart_parent"
+        android:layout_marginTop="@dimen/feedItem_marginTop_parent"
+        android:background="@color/dGreyDark" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_username"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/iv_moreIcon"
+        app:layout_constraintStart_toEndOf="@id/iv_userProfileImage"
+        app:layout_constraintTop_toTopOf="@id/iv_userProfileImage"
+        app:layout_constraintBottom_toBottomOf="@id/iv_userProfileImage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/feedItem_marginBig_internal"
+        android:layout_marginEnd="@dimen/feedItem_margin_internal"
+        android:text="@string/default_username"
+        android:textAppearance="@style/Theme.Text.Headline6" />
+
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_moreIcon"
+        style="@style/Icon"
+        app:layout_constraintBottom_toBottomOf="@id/tv_username"
+        app:layout_constraintEnd_toEndOf="@id/iv_emojiIcon"
+        app:layout_constraintStart_toStartOf="@id/iv_emojiIcon"
+        app:layout_constraintTop_toTopOf="@id/tv_username"
+        app:shapeAppearanceOverlay="@style/CircleOverlay"
+        app:srcCompat="@drawable/ic_more_vertical"
+        android:layout_width="24dp"
+        android:layout_height="0dp" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_text"
+        style="@style/FeedItemBody"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_userProfileImage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/feedItem_marginStart_parent"
+        android:layout_marginTop="@dimen/feedItem_margin_internal"
+        android:layout_marginEnd="@dimen/feedItem_marginEnd_parent"
+        android:layout_marginBottom="@dimen/feedItem_marginBottom_parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_time"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/iv_userProfileImage"
+        app:layout_constraintTop_toBottomOf="@id/tv_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/feedItem_marginEnd_parent"
+        android:text="@string/default_time"
+        android:textAppearance="@style/Theme.Text.Subtitle2" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_emojiIcon"
+        style="@style/Icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_text"
+        app:srcCompat="@drawable/ic_emoji"
+        android:layout_width="16dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/feedItem_marginBig_internal"
+        android:layout_marginEnd="@dimen/feedItem_marginEnd_parent"
+        android:layout_marginBottom="@dimen/feedItem_marginBottom_parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
