@@ -14,9 +14,9 @@
     <color name="white12">#1FFFFFFF</color>
 
     <!-- Day Colors -->
-    <color name="dGrey">#CCCCCC</color> <!-- black -->
+    <color name="dGrey">#FAFAFA</color> <!-- black -->
     <color name="dGreyLight">#FFFFFF</color> <!-- black -->
-    <color name="dGreyDark">#9B9B9B</color> <!-- black -->
+    <color name="dGreyDark">#C7C7C7</color> <!-- black -->
 
     <color name="dPurple">#9C27B0</color> <!-- white -->
     <color name="dPurpleLight">#D05CE3</color> <!-- black -->
@@ -33,13 +33,13 @@
     <color name="nGreyLight">#2E2E2E</color> <!-- white -->
     <color name="nGreyDark">#000000</color> <!-- white -->
 
-    <color name="nPurple">#BA68C8</color> <!-- black -->
-    <color name="nPurpleLight">#EE98FB</color> <!-- black -->
-    <color name="nPurpleDark">#883997</color> <!-- white -->
+    <color name="nPurple">#AB47BC</color> <!-- black -->
+    <color name="nPurpleLight">#DF78EF</color> <!-- black -->
+    <color name="nPurpleDark">#790E8B</color> <!-- white -->
 
-    <color name="nTeal">#4DB6AC</color> <!-- black -->
-    <color name="nTealLight">#82E9DE</color> <!-- black -->
-    <color name="nTealDark">#00867D</color> <!-- black -->
+    <color name="nTeal">#26A69A</color> <!-- black -->
+    <color name="nTealLight">#64D8CB</color> <!-- black -->
+    <color name="nTealDark">#00766C</color> <!-- black -->
 
     <color name="nRed">#E53935</color> <!-- black -->
 

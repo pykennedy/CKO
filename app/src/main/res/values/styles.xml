@@ -17,4 +17,9 @@
         <item name="android:textAppearance">@style/Theme.Text.Body1</item>
     </style>
 
+    <style name="FeedItemFrame" parent="MainTheme">
+        <item name="cornerRadius">0dp</item>
+        <item name="cardElevation">0dp</item>
+    </style>
+
 </resources>

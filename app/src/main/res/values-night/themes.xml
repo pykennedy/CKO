@@ -17,11 +17,11 @@
 
         <item name="colorAccent">@color/nTeal</item>
 
-        <item name="android:colorBackground">@color/nGrey</item>
+        <item name="android:colorBackground">@color/nGreyDark</item>
         <item name="colorOnBackground">@color/white87</item>
 
-        <item name="colorSurface">@color/nGrey</item>
-        <item name="colorOnSurface">@color/dGrey</item>
+        <item name="colorSurface">@color/nGreyDark</item>
+        <item name="colorOnSurface">@color/white87</item>
 
         <item name="colorError">@color/nRed</item>
         <item name="colorOnError">@color/black87</item>
@@ -39,7 +39,9 @@
     <!-- Widget Specific Themes -->
 
     <style name="ActionBarStyle" parent="MainTheme">
-        <item name="colorSurface">@color/nGreyLight</item>
+        <item name="colorSurface">@color/nGreyDark</item>
+        <item name="elevation">0dp</item>
+        <item name="android:windowContentOverlay">?android:attr/listDivider</item>
     </style>
 
     <!-- Text Coloring -->

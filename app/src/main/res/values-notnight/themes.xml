@@ -31,9 +31,16 @@
         <item name="tint">@color/black60</item>
 
         <!-- Reference to Widget Themes -->
+        <item name="actionBarTheme">@style/ActionBarStyle</item>
     </style>
 
     <!-- Widget Specific Themes -->
+    <style name="ActionBarStyle" parent="MainTheme">
+        <item name="elevation">0dp</item>
+        <item name="android:elevation">0dp</item>
+        <item name="android:windowContentOverlay">?android:attr/listDivider</item>
+    </style>
+
 
     <!-- Text Coloring -->
 
