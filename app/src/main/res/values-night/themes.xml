@@ -3,7 +3,7 @@
 
     <!-- Global Theme -->
 
-    <style name="MainTheme" parent="Theme.MaterialComponents.DayNight">
+    <style name="MainTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="colorPrimary">@color/nGrey</item>
         <item name="android:textColorPrimary">@color/white87</item>
         <item name="android:textColorHint">@color/white60</item>
@@ -45,6 +45,10 @@
     </style>
 
     <!-- Text Coloring -->
+
+    <style name="Theme.Text.ActionBarText" parent="Text.ActionBarText">
+        <item name="android:textColor">@color/nPurple</item>
+    </style>
 
     <style name="Theme.Text.Headline1" parent="Text.Headline1">
         <item name="android:textColor">@color/white87</item>

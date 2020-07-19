@@ -52,4 +52,9 @@
     <style name="Text.Overline" parent="TextAppearance.MaterialComponents.Overline">
         <item name="android:textSize">12sp</item>
     </style>
+
+    <style name="Text.ActionBarText" parent="Text.Headline3">
+        <item name="android:textStyle">bold</item>
+    </style>
+
 </resources>
