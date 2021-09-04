@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="feedItem_marginStart_parent">12dp</dimen>
+    <dimen name="feedItem_marginTop_parent">12dp</dimen>
+    <dimen name="feedItem_marginEnd_parent">12dp</dimen>
+    <dimen name="feedItem_marginBottom_parent">12dp</dimen>
+    <dimen name="feedItem_marginHorizontal_parent">12dp</dimen>
+    <dimen name="feedItem_marginVertical_parent">12dp</dimen>
+    <dimen name="feedItem_margin_internal">4dp</dimen>
+    <dimen name="feedItem_marginTiny_internal">2dp</dimen>
+    <dimen name="feedItem_marginBig_internal">8dp</dimen>
+</resources>

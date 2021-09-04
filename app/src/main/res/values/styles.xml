@@ -1,11 +1,25 @@
 <resources>
+    <style name="Divider" parent="MainTheme">
+        <item name="android:background">?android:attr/listDivider</item>
+    </style>
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+    <style name="Icon" parent="MainTheme">
+        <item name="layout_constraintDimensionRatio">1:1</item>
+    </style>
+
+    <style name="FeedItemMedia" parent="MainTheme">
+        <item name="layout_constraintDimensionRatio">16:9</item>
+    </style>
+
+    <style name="FeedItemBody" parent="MainTheme">
+        <item name="android:ellipsize">end</item>
+        <item name="maxLines">7</item>
+        <item name="android:textAppearance">@style/Theme.Text.Body1</item>
+    </style>
+
+    <style name="FeedItemFrame" parent="MainTheme">
+        <item name="cornerRadius">0dp</item>
+        <item name="cardElevation">0dp</item>
     </style>
 
 </resources>

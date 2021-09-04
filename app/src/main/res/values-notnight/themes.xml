@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Global Theme -->
+
+    <style name="MainTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/dGreyLight</item>
+        <item name="android:textColorPrimary">@color/black87</item>
+        <item name="android:textColorHint">@color/black60</item>
+        <item name="colorOnPrimary">@color/black87</item>
+        <item name="colorPrimaryVariant">@color/dGrey</item>
+        <item name="colorPrimaryDark">@color/dGreyDark</item>
+
+        <item name="colorSecondary">@color/dPurple</item>
+        <item name="colorOnSecondary">@color/white87</item>
+        <item name="colorSecondaryVariant">@color/dPurpleLight</item>
+
+        <item name="colorAccent">@color/dTeal</item>
+
+        <item name="android:colorBackground">@color/white</item>
+        <item name="colorOnBackground">@color/black87</item>
+
+        <item name="colorSurface">@color/dGreyLight</item>
+        <item name="colorOnSurface">@color/black87</item>
+
+        <item name="colorError">@color/dRed</item>
+        <item name="colorOnError">@color/white87</item>
+
+        <!-- Specific Colors -->
+        <item name="android:listDivider">@color/black12</item>
+        <item name="tint">@color/black60</item>
+
+        <!-- Reference to Widget Themes -->
+        <item name="actionBarTheme">@style/ActionBarStyle</item>
+    </style>
+
+    <!-- Widget Specific Themes -->
+    <style name="ActionBarStyle" parent="MainTheme">
+        <item name="elevation">0dp</item>
+        <item name="android:elevation">0dp</item>
+        <item name="android:windowContentOverlay">?android:attr/listDivider</item>
+    </style>
+
+
+    <!-- Text Coloring -->
+
+    <style name="Theme.Text.ActionBarText" parent="Text.ActionBarText">
+        <item name="android:textColor">@color/dPurple</item>
+    </style>
+
+    <style name="Theme.Text.Headline1" parent="Text.Headline1">
+        <item name="android:textColor">@color/black87</item>
+    </style>
+
+    <style name="Theme.Text.Headline2" parent="Text.Headline2">
+        <item name="android:textColor">@color/black87</item>
+    </style>
+
+    <style name="Theme.Text.Headline3" parent="Text.Headline3">
+        <item name="android:textColor">@color/black87</item>
+    </style>
+
+    <style name="Theme.Text.Headline4" parent="Text.Headline4">
+        <item name="android:textColor">@color/black87</item>
+    </style>
+
+    <style name="Theme.Text.Headline5" parent="Text.Headline5">
+        <item name="android:textColor">@color/black87</item>
+    </style>
+
+    <style name="Theme.Text.Headline6" parent="Text.Headline6">
+        <item name="android:textColor">@color/black87</item>
+    </style>
+
+    <style name="Theme.Text.Subtitle1" parent="Text.Subtitle1">
+        <item name="android:textColor">@color/black87</item>
+    </style>
+
+    <style name="Theme.Text.Subtitle2" parent="Text.Subtitle2">
+        <item name="android:textColor">@color/black60</item>
+    </style>
+
+    <style name="Theme.Text.Body1" parent="Text.Body1">
+        <item name="android:textColor">@color/black87</item>
+    </style>
+
+    <style name="Theme.Text.Body2" parent="Text.Body2">
+        <item name="android:textColor">@color/black60</item>
+    </style>
+
+    <style name="Theme.Text.Caption" parent="Text.Caption">
+        <item name="android:textColor">@color/black60</item>
+    </style>
+
+    <style name="Theme.Text.Button" parent="Text.Button">
+        <item name="android:textColor">@color/black87</item>
+    </style>
+
+    <style name="Theme.Text.Overline" parent="Text.Overline">
+        <item name="android:textColor">@color/black60</item>
+    </style>
+
+</resources>

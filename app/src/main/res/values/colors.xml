@@ -1,6 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#6200EE</color>
-    <color name="colorPrimaryDark">#3700B3</color>
-    <color name="colorAccent">#03DAC5</color>
+    <!-- Universal Text Colors -->
+    <color name="black">#FF000000</color>
+    <color name="black87">#DE000000</color>
+    <color name="black60">#99000000</color>
+    <color name="black38">#61000000</color>
+    <color name="black12">#1F000000</color>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="white87">#DEFFFFFF</color>
+    <color name="white60">#99FFFFFF</color>
+    <color name="white38">#61FFFFFF</color>
+    <color name="white12">#1FFFFFFF</color>
+
+    <!-- Day Colors -->
+    <color name="dGrey">#FAFAFA</color> <!-- black -->
+    <color name="dGreyLight">#FFFFFF</color> <!-- black -->
+    <color name="dGreyDark">#C7C7C7</color> <!-- black -->
+
+    <color name="dPurple">#9C27B0</color> <!-- white -->
+    <color name="dPurpleLight">#D05CE3</color> <!-- black -->
+    <color name="dPurpleDark">#6A0080</color> <!-- white -->
+
+    <color name="dTeal">#009688</color> <!-- black -->
+    <color name="dTealLight">#52C7B8</color> <!-- black -->
+    <color name="dTealDark">#00675B</color> <!-- white -->
+
+    <color name="dRed">#C62828</color> <!-- white -->
+
+    <!-- Night Colors -->
+    <color name="nGrey">#141414</color> <!-- white -->
+    <color name="nGreyLight">#2E2E2E</color> <!-- white -->
+    <color name="nGreyDark">#000000</color> <!-- white -->
+
+    <color name="nPurple">#AB47BC</color> <!-- black -->
+    <color name="nPurpleLight">#DF78EF</color> <!-- black -->
+    <color name="nPurpleDark">#790E8B</color> <!-- white -->
+
+    <color name="nTeal">#26A69A</color> <!-- black -->
+    <color name="nTealLight">#64D8CB</color> <!-- black -->
+    <color name="nTealDark">#00766C</color> <!-- black -->
+
+    <color name="nRed">#E53935</color> <!-- black -->
+
+    <!-- Other Colors -->
+    <color name="transparent">#00000000</color>
 </resources>
